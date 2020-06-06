@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Results for $(keyword) - Online Book Store</title>
-<link rel="stylesheet" href="../css/style.css" >
+<link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
@@ -18,18 +18,18 @@
 			<h2>No Results Found for "${keyword}" : </h2>
 		</c:if>
 		<c:if test="${fn:length(result) > 0}">
-			<div align="left" style="width: 70%;  margin: 0 auto">
+			<div class="book_group">
 				<center><h2>Results for "${keyword}" :</h2></center>
 				<c:forEach items="${result}" var="book">
 					<div>
-						<div style="float: center; display: inline-block; margin:20px; width: 10%">
-							<div align="left">
+						<div id="search-image">
+							<div>
 								<a href="view_book?id=${book.bookId}">
-									<img src="data:image/jpg;base64,${book.base64Image}" width="128" height="164" />
+									<img class="small_book" src="data:image/jpg;base64,${book.base64Image}" />
 								</a>
 							</div>
 						</div>
-						<div style="float: center; display: inline-block; margin:20px; vertical-align: top; width:60%;" align="left">
+						<div id="search-description">
 							<div>
 								<h2><a href="view_book?id=${book.bookId}"> <b>${book.title}</b></a></h2>
 							</div>
@@ -41,7 +41,7 @@
 								<p>${fn:substring(book.description, 0, 100)}...</p>
 							</div>
 						</div>
-						<div style="float: center; display: inline-block; margin:20px; vertical-align: top;">
+						<div id="search-price">
 							<h3>Rs.${book.price}</h3>
 							<h3><a href="">Add To Cart</a></h3>
 						</div>

@@ -89,7 +89,92 @@ input{
 	margin: 5px;
 }
 
+div.center{
+	text-align: center;
+	align: center;
+}
+
+.center{
+	text-align: center;
+	align: center;
+}
+
+div.book{
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	align: center
+}
+
+.book{
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+}
 
 
+div.piyush{
+	width: 80%;
+	border: 0;
+}
 
+div.book_group{
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.next_row{
+	clear: both;
+}
+
+img.small_book{
+ width: 128px;
+ height: 164px;
+ }
+ 
+img.book-large{
+ width: 240px;
+ height: 300px;
+ }
+ 
+table.book{
+	width: 80%;
+	border: 0;
+	margin: 0 auto;
+}
+
+#book-title{
+	font-size: x-large;
+	font-weight: bold;
+}
+
+#author{
+	font-size: large;
+	font-style: italic;
+}
+
+#description{
+	text-align: justify;
+	vertical-align: top;
+}
+
+#search-image{
+	display: inline-block;
+	margin: 20px;
+	width: 10%;
+}
+
+#search-description{
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+	width: 65%;
+	text-align: left;
+}
+
+#search-price{
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+}
 
