@@ -8,8 +8,14 @@
 	<meta charset="ISO-8859-1">
 	<title>Create New Book</title>
 	<link rel="stylesheet" href="../css/style.css" >
+	
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="..//css/richtext.min.css">
+	
+	
 	<script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.richtext.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
@@ -105,6 +111,10 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
+		
+		$('#description').richText();
+
+		
 		$('#bookImage').change(function(){
 			showImageThumbnail(this);
 		});
